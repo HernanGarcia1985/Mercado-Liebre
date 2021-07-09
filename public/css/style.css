@@ -160,6 +160,34 @@ footer{
     margin: 10px;
 }
 
+#formulario-cuenta{
+    display: flex;
+    justify-content: space-around;
+}
+
+#form{
+    display: inline-block;
+    align-content: center;
+    padding: 25px;
+}
+
+#botones-registro{
+    display: flex;
+    justify-content: center;
+}
+
+#boton-enviar-borrar{
+    background-color: #009cf6;
+    color: black;
+    padding: 7px;
+    border-color: white;
+    margin: 10px;
+}
+
+#main-registro{
+    padding: 10px;
+}
+
 @media(min-width:361px){
     .Imagen{
         box-shadow : 0px 0px 10px rgb( 100 , 100 , 100 );

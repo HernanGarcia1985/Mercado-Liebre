@@ -6,7 +6,12 @@ app.get('/', (req,res) =>{
   res.sendFile(path.join(__dirname, './views/home.html'));
 });
 
+app.get('/registro', (req,res) =>{
+  res.sendFile(path.join(__dirname, './views/register.html'));
+});
+
 app.use(express.static(path.join(__dirname, './public')));
+app.use(express.static(path.join(__dirname, './views')));
 
 
 app.listen(process.env.PORT || 3000, function() {

@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name = "viewport" content="width=device-width, initial-scale = 1">
+    <title>Mercado Liebre</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous">
+    <!link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+    <header>
+        <div id="logo-buscar-titulo">
+            <img id="logo" src="/img/logo-mercado-liebre.svg"></img> 
+            <div id="buscar">
+                <input id="input-buscar" type="text" placeholder="Buscar productos,marcas"></input>
+                <i id="boton-buscar" class="fas fa-search"></i>
+            </div>
+            <h3 class="compra"><i class="fas fa-hand-holding-usd"></i>       Comprá en cuotas y sin tarjeta de crédito</h3>
+        </div>
+        <section id="Site-NavBar">
+            <ul type="None" id="Site">
+                <li class="nav">Ofertas</li>
+                <li class="nav">Tiendas Oficiales</li>
+                <li class="nav">Vender</li>
+                <li class="nav">Ayuda</li>
+            </ul>        
+            <ul type="None" id="NavBar">
+                <li class="nav">Creá tu cuenta <i class="far fa-id-card"></i></li>
+                <li class="nav">Ingresá <i class="fas fa-sign-in-alt"></i></li>
+                <li class="nav">Mis compras <i class="fas fa-shopping-basket"></i></li>
+            </ul>
+        </section>
+        <section id="Hamburguesa" align ="center">
+            <i id="boton-Hamburguesa" class="fas fa-bars" ></i>
+        </section>
+    </header>
+    <main>
+        <div id="main-registro">
+            <h3 align = "center" style="padding-top: 20px;">CREA TU CUENTA</h3>
+            <div id="formulario-cuenta">
+                <form id="form" action="" method="">
+                    <label for="nombre"> Nombre </label>
+                    <input type="text" name="usuario" placeholder="Nombre">
+                    <br>
+                    <label for="apellido"> Apellido </label>
+                    <input type="text" name="usuario2" placeholder="Apellido">
+                    <br>
+                    <label for="nombreUsuario"> Nombre de Usuario </label>
+                    <input type="text" name="nUsuario" placeholder="Nombre de Usuario">
+                    <br>
+                    <label for="fechaNacimiento"> Fecha de Nacimiento </label>
+                    <input type="date" name="fechaNacimiento">
+                    <br>
+                    <label for="Domicilio"> Domicilio </label>
+                    <input type="text" name="domicilio">
+                    <br>
+                    <input type="radio" name="perfil" value="Comprar" checked>
+                    <input type="radio" name="perfil" value="Vender">
+                    <br>
+                    <label for="categorias"> Categorias de interes </label>
+                    <br>
+                    <input type="checkbox" name="combo" value="Electro">
+                    <br>
+                    <input type="checkbox" name="combo" value="Moda">
+                    <br>
+                    <input type="checkbox" name="combo" value="Hogar">
+                    <br>
+                    <input type="checkbox" name="combo" value="Jugueteria">
+                    <br>
+                    <input type="checkbox" name="combo" value="vida Sana">
+                    <br>
+                    <label for="foto"> Sube una foto tuya </label>
+                    <input type="file" name="foto" accept=".jpg" multiple>
+                    <br>
+                    <label for="clave"> Contraseña </label>
+                    <input type="password" name="clave">
+                    <br>
+                    <label for="clave2"> Confirmar Contraseña </label>
+                    <input type="password" name="clave2">
+                    <br>
+                </form>
+            </div>
+            <div id="botones-registro">
+                <a href="home.html"><button id="boton-enviar-borrar" type="submit">Enviar</button></a>
+                <button id="boton-enviar-borrar" type="reset">Borrar formulario</button>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div id="footer">
+            <section align= "center" class="Footer">
+                <i id="icono-footer" class="fas fa-credit-card"></i>
+                <h3>Pagá con tarjeta o efectivo</h3>
+                <p class="Cuerpo">Con Mercado Liebre Cash, tenés cuotas sin interés con tarjeta o efectivo en puntos de pago. ¡Y siempre es seguro!</p>
+            </section>
+            <section align= "center" class="Footer">
+                <i id="icono-footer" class="fas fa-gift"></i>
+                <h3>Envío gratis desde $ 2.500</h3>
+                <p class="Cuerpo">Solo por estar registrad@ en Mercado Liebre tenés envíos gratis en miles de productos. Es un beneficio de Mercado Puntos.</p>
+            </section>
+            <section align= "center" class="Footer">
+                <i id="icono-footer" class="fas fa-user-shield"></i>
+                <h3>Seguridad, de principio a fin</h3>
+                <p class="Cuerpo">¿No te gusta? ¡Devolvelo! En Mercado Liebre, no hay nada que no puedas hacer, porque estás siempre protegid@.</p>
+            </section>
+        </div>
+        <br>
+        <section align= "center" class="Footer">
+            <p class="Cuerpo">Copyright © 1999-2020 MercadoLiebre S.R.L.</p>
+        </section>
+        <br>
+    </footer>
+</body>
+</html>
