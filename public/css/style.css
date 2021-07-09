@@ -12,42 +12,71 @@ body{
 
 header{
     background-color: #EAC926;
-    padding-left: 10px;
 }
 
-#Busqueda{
-    width: 50vw;
-    max-width: 500px;
-    /*height: 50px;
-    font-size: 30px;*/
+#logo-buscar-titulo{
+    max-width: 100vw;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 2%;
+}
+
+#logo{
+    max-width: 25%;
+    margin: 1%;
+}
+
+#buscar{
+    /*max-width: 30%;*/
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: nowrap;
+    margin: 10px;
+}
+
+#input-buscar{
+    max-width: 200px;
     }
 
-#BotonBuscar{
+#boton-buscar{
     background-color: #ebebeb;
     padding: 0.1em;
 }
 
-#Site{
+.compra{
+    font-size: 1em;
+}
+
+#Site-NavBar{
     display: none;
 }
 
-#NavBar{
-    display: none;
+li{
+    margin: 5px;
 }
-
 
 #Hamburguesa{
+    visibility: visible;
+}
+
+#boton-Hamburguesa{
     color: #ebebeb;
     background-color: #1259c3;
     border-radius: 5px;
     padding: 0.5em;
-    visibility: visible;
+    margin: 5px;
 }
 
 main{
     background-color: #ebebeb;
     margin: auto;
-    /*width:90vw;*/
+    width:100vw;
+}
+
+#contenedor-articulos{
+    display: block;
 }
 
 .Imagen{
@@ -59,12 +88,12 @@ main{
 }
 
 #Ultima-visita, #Ofertas{
-    width: 90vw;
-    margin: auto;
+    width: 100vw;
 }
 
 article{
     margin-bottom: 10px;
+    padding: 0% 5%;
 }
 
 .Titulares{
@@ -92,6 +121,7 @@ article{
 
 .Cuerpo{
     font-size: 12px;
+    padding: 1%;
 }
 
 .Articulo{
@@ -115,31 +145,41 @@ article{
 
 footer{
     background-color: white;
-    
+    padding: 2%;
 }
 
 .Footer{
     width: 90vw;
     margin: auto;
+    padding: 1%;
 }
 
-#Footer{
+#icono-footer{
     color: #1259c3;
     font-size: 2em;
-    margin-bottom: 10px;
+    margin: 10px;
 }
 
 @media(min-width:361px){
     .Imagen{
         box-shadow : 0px 0px 10px rgb( 100 , 100 , 100 );
+        max-width: 40vw;
     }
 
     .Articulo{
         box-shadow : 0px 0px 10px rgb( 100 , 100 , 100 );
-    }     
+    }
+    
+    #logo{
+        max-width: 25vw;
+    }
+    
+    #buscar{
+        max-width: 30vw;
+    }
     
     #Hamburguesa{
-        visibility:hidden;
+        display: none;
     }
 
     .Descripcion{
@@ -147,26 +187,53 @@ footer{
         display: block;
     }
 
+    #Site-NavBar{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+        align-items: baseline;
+    }
+
     #Site{
-        display: block;
+        display: flex;
+        justify-content: space-around;
+        margin: 10px;
     }
     
     #NavBar{
-        display: block;
+        display: flex;
+        justify-content: space-around;
+        margin: 10px;
     }
+
+    #contenedor-articulos{
+        display: flex;
+        justify-content: space-around;
+        max-width: 100vw;
+    }
+
 }
 
 @media (min-width:769px){
     .Imagen{
         box-shadow : 0px 0px 10px rgb( 100 , 100 , 100 );
+        max-width: 20vw;
     }
 
     .Articulo{
         box-shadow : 0px 0px 10px rgb( 100 , 100 , 100 );
     }
+
+    #logo{
+        max-width: 25vw;
+    }
+    
+    #buscar{
+        max-width: 30vw;
+    }
     
     #Hamburguesa{
-        visibility:hidden;
+        display: none;
     }
 
     .Descripcion{
@@ -174,13 +241,44 @@ footer{
         display: block;
     }
 
+    #Site-NavBar{
+        display: flex;
+        justify-content: space-around;
+    }
+
     #Site{
-        display: block;
+        display: flex;
+        flex-wrap: nowrap;
+        justify-content: space-around;
     }
     
     #NavBar{
-        display: block;
+        display: flex;
+        flex-wrap: nowrap;
+        justify-content: space-around;
     }
+
+    #contenedor-articulos{
+        display: flex;
+        justify-content: space-around;
+        max-width: 50vw;
+    }
+
+    #contenedor-visita-ofertas{
+        display: flex;
+        justify-content: space-around;
+    }
+
+    #Ultima-visita, #Ofertas{
+        width: 50vw;
+    }
+
+    #footer{
+        display: flex;
+        justify-content: space-around;
+    }
+
+
 }
 
 
