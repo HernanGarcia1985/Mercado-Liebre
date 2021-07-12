@@ -77,10 +77,11 @@ main{
 
 #contenedor-articulos{
     display: block;
+    padding-bottom: 1px;
 }
 
 .Imagen{
-    width: 90vw;
+    width: 100%;
 }
 
 #Banner{
@@ -194,10 +195,9 @@ footer{
     padding: 10px;
 }
 
-@media(min-width:361px /*and max-width:768px*/){
+@media(min-width:362px /*and max-width:768px*/){
     .Imagen{
         box-shadow : 0px 0px 10px rgb( 100 , 100 , 100 );
-        max-width: 40vw;
     }
 
     .Articulo{
@@ -247,11 +247,18 @@ footer{
         max-width: 100vw;
     }
 
+    article{
+        max-width: 43vw;
+    }
+
 }
 
 @media (min-width:769px){
     .Imagen{
         box-shadow : 0px 0px 10px rgb( 100 , 100 , 100 );
+    }
+
+    article{
         max-width: 22vw;
     }
 
@@ -266,6 +273,10 @@ footer{
     #buscar{
         max-width: 30vw;
     }
+
+    #input-buscar{
+        max-width: 300px;
+        }
     
     #Hamburguesa{
         display: none;
