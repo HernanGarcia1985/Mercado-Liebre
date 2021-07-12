@@ -161,13 +161,18 @@ footer{
     margin: 10px;
 }
 
-#formulario-cuenta{
-    display: flex;
-    justify-content: space-around;
+#formulario-cuenta label{
+    font-style: normal;
+    font-size: 18px;
+    font-weight: bold;
+    line-height: 1.5;
+    
+    /*display: flex;
+    justify-content: center;*/
 }
 
 #form{
-    display: inline-block;
+    display: block;
     align-content: center;
     padding: 25px;
 }

@@ -41,8 +41,8 @@ rel="stylesheet">
     <main>
         <div id="main-registro">
             <h3 align = "center" style="padding-top: 20px;">CREA TU CUENTA</h3>
-            <div id="formulario-cuenta">
-                <form id="form" action="" method="">
+            <form id="form" action="" method="POST">
+                <div id="formulario-cuenta">
                     <label for="nombre"> Nombre </label>
                     <input type="text" name="usuario" placeholder="Nombre">
                     <br>
@@ -56,16 +56,15 @@ rel="stylesheet">
                     <input type="date" name="fechaNacimiento">
                     <br>
                     <label for="Domicilio"> Domicilio </label>
-                    <input type="text" name="domicilio">
+                    <input type="text" name="domicilio" placeholder="Domicilio">
                     <br>
-                    <label> Perfil del Usuario </label>
-                    <br>
+                    <label> Perfil del Usuario: </label>
                     <input type="radio" id="perfilComprar" name="perfil" value="Comprar" checked>
                     <label for="perfilComprar"> Comprar </label>
                     <input type="radio" id="perfilVender" name="perfil" value="Vender">
                     <label for="perfilVender"> Vender </label>
                     <br>
-                    <label for="categorias"> Categorias de interés </label>
+                    <label for="categorias"> Categorias de interés: </label>
                     <br>
                     <input type="checkbox" name="combo" value="Electro">
                     <label> Electro </label>
@@ -91,12 +90,12 @@ rel="stylesheet">
                     <label for="clave2"> Confirmar Contraseña </label>
                     <input type="password" name="clave2">
                     <br>
-                </form>
-            </div>
-            <div id="botones-registro">
-                <a href="home.html"><button id="boton-enviar-borrar" type="submit">Enviar</button></a>
-                <button id="boton-enviar-borrar" type="reset">Borrar formulario</button>
-            </div>
+                </div>
+                <div id="botones-registro">
+                    <a href="home.html"><button id="boton-enviar-borrar" type="submit">Enviar</button></a>
+                    <button id="boton-enviar-borrar" type="reset">Borrar formulario</button>
+                </div>
+            </form>
         </div>
     </main>
     <footer>
